@@ -115,7 +115,7 @@ main{
   margin-bottom: 10px;
 }
 .welcome{
-  width: auto;
+  width: 100%;
   padding: 100px 20%;
   background-image: url(../img/fondo-welcome.jpg);
   background-position: center;
