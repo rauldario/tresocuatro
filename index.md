@@ -80,6 +80,7 @@
       <h3>Redes sociales</h3>
       <ul>
         <li><a href="https://www.facebook.com/Tresocuatro/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+      </ul>
     </div>
     <div class="copy">
       <p>Copyright &copy; 2019</p>
