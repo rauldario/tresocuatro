@@ -167,8 +167,7 @@ main{
 .webdescr{
   width: auto;
   height: auto;
-  margin: 0 auto;
-  padding-right: 10px;
+  margin: 10px;
 }
 .webdescr ul li{
   font-size: .9em;
@@ -177,6 +176,7 @@ main{
 .webimage{
   width: 250px;
   height: auto;
+  margin: 10px;
   display: flex;
   flex-shrink: 0;
   background-image: url(../img/adi-web.jpg);
