@@ -116,7 +116,7 @@ main{
 }
 .welcome{
   width: auto;
-  padding: 100px 20%;
+  padding: 100px 10%;
   background-image: url(../img/fondo-welcome.jpg);
   background-position: center;
   background-size: cover;
@@ -249,9 +249,6 @@ footer img{
   .nav-pc ul li a{
     font-size: 1em;
   }
-  .welcome{
-  padding: 100px 10%;
-  }
   .web{
     width: 100%;
     height: auto;
@@ -264,5 +261,10 @@ footer img{
     height: 400px;
     margin: 0 auto;
     display: inline-block;
+  }
+}
+@media screen and (min-width: 671px){
+  .welcome{
+    padding: 100px 20%;
   }
 }
