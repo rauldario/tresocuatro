@@ -20,7 +20,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 <!-- Styles -->
-  <link rel="stylesheet" href="https://rauldario.github.io/tresocuatro/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
