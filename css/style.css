@@ -1,5 +1,5 @@
 /*font*/
-@import url('//fonts.googleapis.com/css?family=Open+Sans');
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
 
 /*Reset*/
 *{
@@ -10,7 +10,7 @@
   /* outline: solid 1px red; */
 }
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: Open Sans, sans-serif;
   text-align: justify;
 }
 p{
