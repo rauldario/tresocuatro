@@ -116,7 +116,7 @@ main{
 }
 .welcome{
   width: auto;
-  padding: 100px 10%;
+  padding: 100px 20%;
   background-image: url(../img/fondo-welcome.jpg);
   background-position: center;
   background-size: cover;
@@ -250,7 +250,7 @@ footer img{
     font-size: 1em;
   }
   .welcome{
-  padding: 100px 20%;
+  padding: 100px 10%;
   }
   .web{
     width: 100%;
