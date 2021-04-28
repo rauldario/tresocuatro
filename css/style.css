@@ -181,7 +181,8 @@ main{
   flex-shrink: 0;
   background-image: url(../img/adi-web.jpg);
   background-size: 250px auto;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position:center top;
 }
 /* footer */
 footer{
