@@ -180,7 +180,7 @@ main{
   display: flex;
   flex-shrink: 0;
   background-image: url(../img/adi-web.jpg);
-  background-size: cover;
+  background-size: 250px auto;
   background-position: center;
 }
 /* footer */
