@@ -167,6 +167,7 @@ main{
 .webdescr{
   width: auto;
   height: auto;
+  padding:20px;
   margin: 0 auto;
   padding-right: 10px;
 }
@@ -177,6 +178,7 @@ main{
 .webimage{
   width: 250px;
   height: auto;
+  padding:20px;
   display: flex;
   flex-shrink: 0;
   background-image: url(../img/adi-web.jpg);
