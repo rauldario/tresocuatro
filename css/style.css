@@ -167,7 +167,6 @@ main{
 .webdescr{
   width: auto;
   height: auto;
-  padding-right: 20px;
 }
 .webdescr ul li{
   font-size: .9em;
@@ -256,10 +255,6 @@ footer img{
     flex-flow: column;
   }
   
-  .webdescr{
-  padding-right: 0;
-  }
-  
   .webimage{
     width: 100%;
     height: 400px;
@@ -270,5 +265,8 @@ footer img{
 @media screen and (min-width: 671px){
   .welcome{
     padding: 100px 20%;
+  }
+  .webdescr{
+  padding-right: 20px;
   }
 }
