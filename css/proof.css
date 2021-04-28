@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  transition: all .5s ease;
+  box-sizing: border-box;
+  /* outline: solid 1px red; */
+}
+.one{
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background: teal;
+  padding: -10px;
+}
+.one:after{
+  content: '';
+  flex-grow: 999999999;
+}
+.bee{
+  position: relative;
+  display: block;
+  min-width: 320px;
+  height: 50px;
+  text-align: center;
+  flex-grow: 1;
+  padding: 10px;
+}
+.two{
+  width: 250px;
+  background: brown;
+  margin: 0 auto;
+}
+@media screen and (max-width: 320px) {
+  .bee{
+    justify-content: space-around;
+  }
+}

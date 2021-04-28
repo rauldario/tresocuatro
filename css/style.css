@@ -1,0 +1,264 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*Reset*/
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  transition: all 1s ease;
+  /* outline: solid 1px red; */
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+}
+p{
+  font-size: .9em;
+}
+h1{
+  text-align: center;
+  font-size: 2em;
+}
+h2{
+  font-size: 1.4em;
+}
+h3{
+  font-size: 1.2em;
+}
+header{
+  width: 100%;
+  height: 150px;
+  display: inline-block;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 999;
+  top:0;
+  left: 0;
+  background: #fff;
+}
+.topinfo{
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  justify-content: center;
+  background: #fff;
+}
+.topinfo div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction:column;
+  margin: 0 auto;
+}
+.topinfo img{
+  height: 80px;
+  cursor: pointer;
+}
+.topinfo img:hover{
+  transform: scale(1.15, 1.15);
+}
+.topinfo h2{
+  font-style: italic;
+    color: goldenrod;
+}
+/*menu */
+.nav-pc{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: black;
+}
+.nav-pc ul{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-pc ul li{
+  width: auto;
+  padding: 0 7px;
+  display: inline-block;
+  margin: 0 auto;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.nav-pc ul li:hover{
+  transform: scale(1.1, 1.1);
+}
+.nav-pc ul li a{
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* main */
+main{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 150px;
+  z-index: 2;
+}
+.welcome h1, .grafico h3, .web h3{
+  margin-bottom: 20px;
+}
+.welcome p, .grafico p, .web p{
+  margin-bottom: 10px;
+}
+.welcome{
+  width: auto;
+  padding: 100px 20%;
+  background-image: url(../img/fondo-welcome.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: #8C1F22;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+.grafico{
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.grafico h3{
+  color: olive;
+}
+.graficosample{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.graficosample div{
+  width: 250px;
+  margin: 10px;
+  outline: solid 1px olive;
+}
+.graficosample img{
+  width: 100%;
+}
+.graficosample p{
+  color: #fff;
+  text-align: right;
+  padding-right: 5px;
+  margin-bottom: 0;
+  background-color: olive;
+  line-height: 40px;
+}
+.web{
+  width: auto;
+  display: flex;
+  padding: 100px 10%;
+  background: darkcyan;
+  color: white;
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+.webdescr{
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding-right: 10px;
+}
+.webdescr ul li{
+  font-size: .9em;
+  list-style-position: inside;
+}
+.webimage{
+  width: 250px;
+  height: auto;
+  display: flex;
+  flex-shrink: 0;
+  background-image: url(../img/adi-web.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/* footer */
+footer{
+  width: 100%;
+  color: #fff;
+  background: goldenrod;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+footer div{
+  padding:20px;
+  align-items: center;
+  justify-content: center;
+}
+.contact{
+  display: flex;
+  text-align: center;
+}
+
+.social{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social h3{
+  text-align: center;
+}
+.social ul{
+  width: 250px;
+  list-style: none;
+  margin: 0 auto;
+  margin: 10px 0;
+}
+.social ul li{
+  text-align: center;
+  margin: 0 auto;
+  width: 150px;
+}
+.social ul li a{
+  color: #FFF;
+  text-decoration: none;
+  transition: .1s;
+}
+.social ul li:hover{
+  color: red;
+  transform: scale(1.15 , 1.15);
+}
+
+.copy{
+  display: flex;
+  flex-direction: column;
+}
+footer img{
+  margin-top: 10px;
+  width: 80px;
+}
+
+@media screen and (max-width: 670px){
+  .nav-pc ul li{
+    padding: 0 10px;
+  }
+  .nav-pc ul li a{
+    font-size: 1em;
+  }
+  .web{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+  }
+  .webimage{
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    display: inline-block;
+  }
+}
