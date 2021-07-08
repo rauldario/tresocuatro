@@ -1,5 +1,5 @@
 /*font*/
-@import url(//fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /*Reset*/
 *{
@@ -9,50 +9,56 @@
   transition: all 1s ease;
   /* outline: solid 1px red; */
 }
+/* Global */
 body{
-  font-family: Open Sans, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: justify;
+  background: ghostwhite;
 }
 p{
-  font-size: .9em;
+  font-size: .95em;
+  margin-bottom: 10px;
 }
 h1{
   text-align: center;
   font-size: 2em;
+  margin-bottom: 20px;
 }
 h2{
   font-size: 1.4em;
 }
 h3{
   font-size: 1.2em;
+  margin-bottom: 20px;
 }
+
 header{
   width: 100%;
   height: 150px;
   display: inline-block;
   margin: 0 auto;
   position: fixed;
-  z-index: 999;
-  top:0;
+  top: 0;
   left: 0;
-  background: #fff;
 }
 .topinfo{
   width: 100%;
   height: 80px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  position: relative;
   padding: 10px 0;
-  justify-content: center;
-  background: #fff;
+  z-index: 999;
+/*  align-items: center;
+  justify-content: center;  */
+  background: ghostwhite;
 }
 .topinfo div{
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   flex-direction:column;
+/*  justify-content: center;
+  flex-wrap: wrap; */
   margin: 0 auto;
 }
 .topinfo img{
@@ -64,40 +70,107 @@ header{
 }
 .topinfo h2{
   font-style: italic;
-    color: goldenrod;
+  color: goldenrod;
 }
+.topinfo p{
+  margin-bottom: 0;
+}
+
 /*menu */
 .nav-pc{
   width: 100%;
   height: 50px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
   background: black;
 }
 .nav-pc ul{
-  width: 50%;
+  width: 70%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .nav-pc ul li{
   width: auto;
   padding: 0 7px;
-  display: inline-block;
-  margin: 0 auto;
+  display: inline-flex;
   line-height: 20px;
   text-align: center;
   cursor: pointer;
 }
 .nav-pc ul li:hover{
-  transform: scale(1.1, 1.1);
+  transform: scale(1.1);
 }
 .nav-pc ul li a{
   font-size: 1.2em;
   text-decoration: none;
   color: #fff;
+}
+
+/*menu para movil*/
+.nav-box-mobile{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  z-index: 990;
+  background: black;
+}
+.hamb-con{
+  width: auto;
+  height: auto;
+  margin-left: 15px;
+  z-index: 6;
+}
+.nav-box-mobile i{
+  font-size: 2em;
+  color: #FFF;
+}
+
+/*lo que despliega el menu hamb*/
+.oculto{
+  width: 100%;
+  height: auto;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  transform: translate(0,-800px);
+  transition: all .7s ease-in-out;
+  z-index: 5;
+  padding-bottom: 15px;
+}
+/*efecto al tener active vuelve a top: 0*/
+.oculto.active{
+  transform: translate(0,0);
+}
+.oculto nav{
+  width: 100%;
+  height: auto;
+  margin: 45px auto 0 auto;
+}
+.oculto nav ul{
+  max-width: 60%;
+  height: 240px;
+  margin: 0 auto;
+  list-style: none;
+}
+.oculto nav ul li{
+  height: 20%;
+  list-style: none;
+  border-bottom: 1.5px solid goldenrod;
+}
+.oculto nav ul li a{
+  font-size: 1.5em;
+  line-height: 2em;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* main */
@@ -108,21 +181,12 @@ main{
   margin-top: 150px;
   z-index: 2;
 }
-.welcome h1, .grafico h3, .web h3{
-  margin-bottom: 20px;
-}
-.welcome p, .grafico p, .web p{
-  margin-bottom: 10px;
-}
+
 .welcome{
   width: auto;
   padding: 100px 10%;
-  background-image: url(../img/fondo-welcome.jpg);
-  background-position: center;
-  background-size: cover;
-  background-color: #8C1F22;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+/*  background: radial-gradient(circle, rgba(184,134,11,0.95) 30%, rgba(218,165,32,0.8) 100%), url(../img/fondo-welcome.jpg) center center / cover no-repeat fixed goldenrod; */
+  background: radial-gradient(circle, rgba(178,34,34,0.8) 30%, rgba(139,0,0,0.8) 100%), url(../img/fondo-welcome.jpg) center center / cover no-repeat fixed firebrick;
   color: white;
 }
 .grafico{
@@ -156,7 +220,7 @@ main{
   line-height: 40px;
 }
 .web{
-  width: auto;
+  width: 100%;
   display: flex;
   padding: 100px 10%;
   background: darkcyan;
@@ -165,7 +229,7 @@ main{
   box-sizing: border-box;
 }
 .webdescr{
-  width: auto;
+  min-width: 250px;
   height: auto;
 }
 .webdescr ul li{
@@ -173,15 +237,93 @@ main{
   list-style-position: inside;
 }
 .webimage{
-  width: 250px;
+  width: 300px;
   height: auto;
   display: flex;
   flex-shrink: 0;
-  background-image: url(../img/adi-web.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position:center top;
+  background: url(../img/adi-web.jpg) top center / contain no-repeat local transparent;
 }
+
+/* About Us */
+.aboutus{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: inline-flex;
+}
+.aboutus div{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.abouttext{
+  background: peru;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+.abouttext h2:last-of-type{
+  padding-top: 40px;
+}
+.proposito{
+  width: 100%;
+  height: auto;
+  background: top center / cover no-repeat local transparent;
+}
+ /*testimonials*/
+ .opiniones{
+   width: 100%;
+   background: #37474F;
+ }
+ .comentarios{
+   color: ghostwhite;
+   width: 80%;
+   height: auto;
+   margin: 0 auto;
+   padding: 5% 0;
+ }
+ .commentSlider{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+ }
+ .commentSlider div{
+   width: 250px;
+   margin: 10px;
+   background: #546E7A;
+   display: inline-flex;
+   flex-direction: column;
+   outline: solid 1px ghostwhite;
+ }
+ .commentSlider div:hover{
+   background: #6691B2;
+   outline: solid 1px peru;
+   box-shadow: 0px 0px 10px peru;
+ }
+ .commentSlider img{
+   width: 70%;
+   margin: 0 auto;
+   border-radius: 100px;
+   border: dashed 2px #111827;
+ }
+ .commentSlider h3, q{
+   margin: 1em 0 0.5em;
+   text-align: center;
+ }
+ .commentSlider h3{
+   color: #111827;
+ }
+
+ .commentSlider p{
+   color:ghostwhite;
+   text-align: right;
+   padding-right: 5px;
+   margin-bottom: 0;
+   background-color: #111827;
+   line-height: 40px;
+ }
+
+
 /* footer */
 footer{
   width: 100%;
@@ -193,7 +335,7 @@ footer{
   margin-top: 30px;
 }
 footer div{
-  padding:20px;
+  padding: 20px;
   align-items: center;
   justify-content: center;
 }
@@ -201,13 +343,16 @@ footer div{
   display: flex;
   text-align: center;
 }
-
+.contact p{
+  margin-bottom: 0;
+}
 .social{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .social h3{
+  margin-bottom: 0;
   text-align: center;
 }
 .social ul{
@@ -254,19 +399,51 @@ footer img{
     display: flex;
     flex-flow: column;
   }
-  
   .webimage{
     width: 100%;
     height: 400px;
     margin-top: 20px;
     display: inline-block;
   }
+  .nav-pc{
+    display: none;
+  }
+  .oculto, .nav-box-mobile{
+  }
+  /*desaparecer span.back*/
+  .back{
+    display: none;
+  }
+  .aboutus{
+    flex-direction: column-reverse;
+  }
+  .aboutus div{
+    width: 100%;
+  }
+  .abouttext{
+    padding: 20% 5%;
+  }
 }
-@media screen and (min-width: 671px){
+  @media screen and (min-width: 671px){
   .welcome{
     padding: 100px 20%;
   }
   .webdescr{
   padding-right: 20px;
+  }
+  /*ocultar menu de movil*/
+  .oculto, .nav-box-mobile{
+    display: none;
+  }
+}
+
+/*movil*/
+@media screen and (max-width: 360px){
+  .nav-pc{
+    display: none;
+  }
+  /*desaparecer span.back*/
+  .back{
+    display: none;
   }
 }

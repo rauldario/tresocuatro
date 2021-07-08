@@ -7,32 +7,42 @@
   /* outline: solid 1px red; */
 }
 .one{
+  width: 100%;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   overflow: hidden;
   background: teal;
-  padding: -10px;
 }
-.one:after{
-  content: '';
-  flex-grow: 999999999;
+.hive{
+  width: 95%;
+  text-align: justify;
+/*  background-color: rgba(150,0,150,0.2);  */
+  display: inline-block;
 }
+
+.hive:after{
+content: '';
+width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+display: inline-block;
+}
+
 .bee{
   position: relative;
-  display: block;
-  min-width: 320px;
-  height: 50px;
+  display: inline-block;
+  min-width: 250px;
+  background-color: brown;
   text-align: center;
-  flex-grow: 1;
-  padding: 10px;
+  margin: 10px 5px;
+  padding: 10px 0;
 }
-.two{
-  width: 250px;
-  background: brown;
-  margin: 0 auto;
-}
-@media screen and (max-width: 320px) {
-  .bee{
-    justify-content: space-around;
+
+
+@media screen and (max-width: 680px) {
+  .hive{
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
   }
 }

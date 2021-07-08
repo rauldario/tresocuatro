@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,24 +20,52 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 <!-- Styles -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <header>
-    <div id="topinfo" class="topinfo">
-      <div><img id="logoPc" src="img/treso4.svg" alt="Logo Treso4"></div>
-      <div><h2>Cont&aacute;ctenos</h2><p>8839-0807</p><p>info@tresocuatro.com</p></div>
-    </div>
-      <!-- nav pc -->
-      <nav class="nav-pc">
-        <ul>
-          <li><a href="#topinfo">Inicio</a></li>
-          <li><a href="#grafico">Dise&ntilde;o Gr&aacute;fico</a></li>
-          <li><a href="#web">Dise&ntilde;o Web</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
+    <!-- menu para tablet y pc -->
+    <section id="topinfo" class="topinfo">
+      <div>
+        <img id="logoPc" src="img/treso4.svg" alt="Logo Treso4">
+      </div>
+      <div>
+        <h2>Cont&aacute;ctenos</h2>
+        <p>8839-0807</p>
+        <p>info@tresocuatro.com</p>
+      </div>
+    </section>
+    <!-- nav pc -->
+    <nav class="nav-pc">
+      <ul>
+        <li><a href="#topinfo">Inicio</a></li>
+        <li><a href="#grafico">Dise&ntilde;o Gr&aacute;fico</a></li>
+        <li><a href="#web">Desarrollo Web</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <!-- menu para movil -->
+    <section class="nav-box-mobile">
+      
+      <div id="hamb-nav" class="hamb-con">
+        <i id="hamb-menu" class="fa fa-bars hamb" aria-hidden="true"></i>
+      </div>
+
+      <div id="hide" class="oculto">
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#grafico">Dise&ntilde;o Gr&aacute;fico</a></li>
+            <li><a href="#web">Desarrollo Web</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
   </header>
+
+<!-- Main -->
   <main>
     <section class="welcome">
       <h1>Bienvenidos</h1>
@@ -45,33 +73,43 @@
       <p>Como profesionales en el campo del Diseño Gráfico y del Diseño Web, creemos fielmente que el trabajo en equipo asegura el éxito, por lo que desde el momento en que empezamos a trabajar con usted y su empresa nos convertimos en parte de su equipo.</p>
       <p id="grafico">Somos dos profesionales con 18 años de experiencia en producción gráfica y programación. Cada uno especializado en diferentes ámbitos para brindarle las mejores opciones en sus proyectos.</p>
     </section>
+
     <section class="grafico">
       <h3>Dise&ntilde;o Gr&aacute;fico</h3>
       <p>Ponemos a su disposici&oacute;n nuestra experiencia y conocimiento. Hemos dise&ntilde;ado para diversos sectores tales como: institucional, educativo, tur&iacute;stico, m&eacute;dico, restaurantes y comercio.</p>
       <p>Le apoyamos en conseguir sus objetivos proponiendo y trabajando en conjunto, ideas creativas aplicadas a la informaci&oacute;n que desea transmitir a sus clientes y que aportan fortaleza a sus proyectos.</p>
       <div class="graficosample">
-        <div><img src="img/banners.jpg" alt=""><p>Dise&ntilde;o de banners y roller up</p></div>
-        <div><img src="img/flyers.jpg" alt=""><p>Dise&ntilde;o de flyers y brochures</p></div>
-        <div><img src="img/poster.jpg" alt=""><p>Planificadores y calendarios</p></div>
+        <div>
+          <img src="img/banners.jpg" alt="">
+          <p>Dise&ntilde;o de banners y roller up</p>
+        </div>
+        <div>
+          <img src="img/flyers.jpg" alt="">
+          <p>Dise&ntilde;o de flyers y brochures</p></div>
+        <div>
+          <img src="img/poster.jpg" alt="">
+          <p>Planificadores y calendarios</p>
+        </div>
       </div>
     </section>
+
     <section id="web" class="web">
       <div class="webdescr">
-        <h3>Dise&ntilde;o Web y Digital</h3>
-        <p>Tener un sitio web es tener presencia digital a nivel mundial. La comunicaci&oacute;n que se establezca por medio de él debe ser basada en un diseño e infraestructura ingeniosa, versátil y dinámica.</p>
-        <p>Para ello aprendemos de usted acerca de su vision de negocio, para identificarnos con sus objetivos y proyectos, logrando trabajar en equipo a lo largo del proceso.</p>
+        <h3>Desarrollo Web y Digital</h3>
+        <p>Hoy en d&iacute;a tener presencia digital es esencial para los negocios y un sitio web es una herramienta inmediata de informaci&oacute;n y contacto con sus clientes de forma directa y basada en un diseño versátil y cordial.</p>
+        <p>Por ello aprendemos de usted la visi&oacute;n de su negocio para identificarnos con sus objetivos, proyectos y trabajar como equipo en el proceso de implementaci&oacute;n.</p>
         <ul>
-          <li>Hosting y dominio</li>
-          <li>P&aacute;ginas Web</li>
-          <li>Asesor&iacute;a en marcas para Internet</li>
-          <li>Dise&ntilde;o comercial digital</li>
-          <li>Optimizaci&oacute;n del rendimiento</li>
+          <li>Hosting y dominio.</li>
+          <li>Sitios Web y Landing Page.</li>
+          <li>Asesor&iacute;a en marcas para Internet.</li>
+          <li>Dise&ntilde;o comercial digital.</li>
+          <li>Evaluaci&oacute;n de rendimiento web.</li>
         </ul>
       </div>
-      <div class="webimage">
-      </div>
+      <div class="webimage"></div>
     </section>
   </main>
+<!-- Footer -->
   <footer id="contact">
     <div class="contact">
       <div><h2>Cont&aacute;ctenos</h2><p>8839-0807</p><p>info@tresocuatro.com</p></div>
@@ -79,7 +117,9 @@
     <div class="social">
       <h3>Redes sociales</h3>
       <ul>
-        <li><a href="https://www.facebook.com/Tresocuatro/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        <li>
+          <a href="https://www.facebook.com/Tresocuatro/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a>
+        </li>
       </ul>
     </div>
     <div class="copy">
@@ -87,10 +127,11 @@
       <img src="img/treso4w.svg" alt="Tres o 4">
     </div>
   </footer>
-<!-- Script -->
+
   <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" src="js/top.js"></script>
   <script type="text/javascript" src="js/slider.js"></script>
+
 <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/d32df99f9d.js"></script>
 </body>
