@@ -153,7 +153,7 @@ header{
 .oculto nav{
   width: 100%;
   height: auto;
-  margin: 45px auto 0 auto;
+  margin: 45px auto 180px auto;
 }
 .oculto nav ul{
   max-width: 60%;
@@ -182,20 +182,21 @@ main{
   z-index: 2;
 }
 
+/* Bienvenida */
 .welcome{
   width: auto;
-  padding: 100px 10%;
+  padding: 10%;
 /*  background: radial-gradient(circle, rgba(184,134,11,0.95) 30%, rgba(218,165,32,0.8) 100%), url(../img/fondo-welcome.jpg) center center / cover no-repeat fixed goldenrod; */
   background: radial-gradient(circle, rgba(178,34,34,0.8) 30%, rgba(139,0,0,0.8) 100%), url(../img/fondo-welcome.jpg) center center / cover no-repeat fixed firebrick;
-  color: white;
+  color: ghostwhite;
 }
+
+/* Diseño Grafico */
 .grafico{
-  width: 80%;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 40px;
+  width: auto;
+  padding: 5% 10%;
 }
-.grafico h3{
+.grafico h1{
   color: olive;
 }
 .graficosample{
@@ -210,22 +211,27 @@ main{
 }
 .graficosample img{
   width: 100%;
+  height: auto;
 }
 .graficosample p{
-  color: #fff;
-  text-align: right;
-  padding-right: 5px;
+  color: olive;
+  text-align: center;
   margin-bottom: 0;
-  background-color: olive;
+  outline: solid 1px olive;
   line-height: 40px;
 }
+.graficosample p:hover{
+  background: olive;
+  color: ghostwhite;
+}
+
+/* Desarrollo Web */
 .web{
   width: 100%;
   display: flex;
   padding: 100px 10%;
   background: darkcyan;
-  color: white;
-  margin-top: 40px;
+  color: ghostwhite;
   box-sizing: border-box;
 }
 .webdescr{
@@ -262,13 +268,16 @@ main{
   padding: 0 5%;
   box-sizing: border-box;
 }
-.abouttext h2:last-of-type{
-  padding-top: 40px;
+.abouttext h1{
+  margin-bottom: 0;
+}
+.abouttext h1:last-of-type{
+  padding-top: 50px;
 }
 .proposito{
   width: 100%;
   height: auto;
-  background: top center / cover no-repeat local transparent;
+  background: top center / cover no-repeat local peru;
 }
  /*testimonials*/
  .opiniones{
@@ -313,7 +322,6 @@ main{
  .commentSlider h3{
    color: #111827;
  }
-
  .commentSlider p{
    color:ghostwhite;
    text-align: right;
@@ -323,7 +331,6 @@ main{
    line-height: 40px;
  }
 
-
 /* footer */
 footer{
   width: 100%;
@@ -332,7 +339,6 @@ footer{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 30px;
 }
 footer div{
   padding: 20px;
@@ -351,15 +357,14 @@ footer div{
   flex-direction: column;
   align-items: center;
 }
-.social h3{
-  margin-bottom: 0;
+#contact h3{
+  margin: 0;
   text-align: center;
 }
 .social ul{
   width: 250px;
   list-style: none;
   margin: 0 auto;
-  margin: 10px 0;
 }
 .social ul li{
   text-align: center;
@@ -381,7 +386,7 @@ footer div{
   flex-direction: column;
 }
 footer img{
-  margin-top: 10px;
+  margin-top: 5px;
   width: 80px;
 }
 
@@ -391,6 +396,9 @@ footer img{
   }
   .nav-pc ul li a{
     font-size: 1em;
+  }
+  .welcome{
+    padding: 100px 20%;
   }
   .web{
     width: 100%;
@@ -425,9 +433,6 @@ footer img{
   }
 }
   @media screen and (min-width: 671px){
-  .welcome{
-    padding: 100px 20%;
-  }
   .webdescr{
   padding-right: 20px;
   }
