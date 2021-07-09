@@ -297,11 +297,12 @@ main{
    justify-content: space-around;
  }
  .commentSlider div{
-   width: 250px;
-   margin: 10px;
-   background: #546E7A;
-   display: inline-flex;
+   width: 200px;
+   margin: 20px;
+   background: #668888;
+   display: flex;
    flex-direction: column;
+   justify-content: space-between;
    outline: solid 1px ghostwhite;
  }
  .commentSlider div:hover{
@@ -310,26 +311,72 @@ main{
    box-shadow: 0px 0px 10px peru;
  }
  .commentSlider img{
-   width: 70%;
+   width: 50%;
    margin: 0 auto;
-   border-radius: 100px;
+   border-radius: 100%;
    border: dashed 2px #111827;
  }
  .commentSlider h3, q{
-   margin: 1em 0 0.5em;
+   margin: 1em 0;
    text-align: center;
  }
  .commentSlider h3{
+   height: 50px;
    color: #111827;
  }
  .commentSlider p{
-   color:ghostwhite;
+   color: ghostwhite;
    text-align: right;
    padding-right: 5px;
    margin-bottom: 0;
    background-color: #111827;
    line-height: 40px;
  }
+
+
+/* Portafolio*/
+.portafolio{
+  width: 100%;
+  padding: 5% 0;
+  background: #2C3E50;
+}
+.portTitulo{
+  color: ghostwhite;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+.portProyectos{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.portProyectos div{
+  width: 45%;
+  margin: 15px 0;
+  background: ghostwhite;
+  flex-direction: column;
+  outline: solid 1px black;
+}
+.portProyectos div:hover{
+  background: peru;
+  outline: solid 1px peru;
+  box-shadow: 0px 0px 10px peru;
+}
+.portProyectos img{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.portProyectos p{
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 80%;
+  line-height: 40px;
+}
 
 /* footer */
 footer{
@@ -439,6 +486,12 @@ footer img{
   /*ocultar menu de movil*/
   .oculto, .nav-box-mobile{
     display: none;
+  }
+  .portProyectos div{
+    width: 30%;
+  }
+  .portProyectos p{
+    font-size: 1em;
   }
 }
 
