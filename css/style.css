@@ -486,6 +486,7 @@ main{
   margin: 0 auto;
   padding: 2%;
   background: white;
+  background: url("../img/blog-2.jpg") center center / cover no-repeat fixed darkcyan;
   box-sizing: border-box;
 }
 .entradasTexto p {
@@ -585,7 +586,7 @@ footer img{
   }
   .oculto, .nav-box-mobile{
   }
-  /*desaparecer span.back*/
+  /* desaparecer span.back */
   .back{
     display: none;
   }
