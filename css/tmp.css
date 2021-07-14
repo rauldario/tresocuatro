@@ -1,0 +1,45 @@
+.entradasNuevas{
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.entradasNuevas div{
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.entradasNuevas{
+  margin: 0 auto;
+  padding: 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.entradasNuevas div{
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*FIXED*/
+
+.entradasNuevas{
+  margin: 0 auto;
+  padding: 0 5%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.entradasNuevas div{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}

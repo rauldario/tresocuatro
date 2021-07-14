@@ -278,14 +278,14 @@ main{
   height: 100%;
   background: top center / cover no-repeat fixed peru;
 }
-.abouttext{
+.aboutText{
   background: peru;
   padding: 0 5%;
 }
-.abouttext h1{
+.aboutText h1{
   margin-bottom: 2%;
 }
-.abouttext h1:last-of-type{
+.aboutText h1:last-of-type{
   padding-top: 5%;
 }
 
@@ -427,21 +427,15 @@ main{
 }
 .entradasNuevas, .portadaBlog{
   width: 50%;
+  height: auto;
   background: darkcyan;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   box-sizing: border-box;
 }
 .entradasNuevas{
   padding: 0 5%;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-}
-.entradasNuevas div{
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
 }
 .entradasNuevas div:first-child{
   margin-bottom: 5%;
@@ -453,9 +447,10 @@ main{
 }
 .portadaBlog img{
   width: 100%;
-  height: auto;
+  height: 100%;
   background: url("../img/blog.jpg") center center / cover no-repeat fixed darkcyan;
   }
+
 .tituloBlog{
   width: 100%;
   background: navajowhite;
@@ -487,8 +482,10 @@ main{
 }
 .entradasAntes img{
   width: 100%;
-  background: navajowhite;
+  height: 100%;
   margin: 0 auto;
+  padding: 2%;
+  background: white;
   box-sizing: border-box;
 }
 .entradasTexto p {
