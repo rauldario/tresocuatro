@@ -469,6 +469,7 @@ main{
 }
 .entradasAntes div{
   width: 50%;
+  height: 75vh;
   display: flex;
   box-sizing: border-box;
 }
