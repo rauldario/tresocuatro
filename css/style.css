@@ -435,9 +435,9 @@ main{
   box-sizing: border-box;
 }
 .entradasNuevas{
-  padding: 0 5%;
+  padding: 5%;
 }
-.entradasNuevas a:first-child{
+.entradasNuevas a:first-of-type{
   margin-bottom: 5%;
 }
 .entradasNuevas>h2{
