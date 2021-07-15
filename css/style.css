@@ -437,8 +437,11 @@ main{
 .entradasNuevas{
   padding: 0 5%;
 }
-.entradasNuevas div:first-child{
+.entradasNuevas a:first-child{
   margin-bottom: 5%;
+}
+.entradasNuevas>h2{
+  text-align: left;
 }
 .entradasNuevas a{
   align-self: flex-end;
