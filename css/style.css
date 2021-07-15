@@ -469,7 +469,7 @@ main{
 }
 .entradasAntes div{
   width: 50%;
-  height: 75vh;
+  height: 60vh;
   display: flex;
   box-sizing: border-box;
 }
@@ -489,7 +489,6 @@ main{
   margin: 0 auto;
   padding: 2%;
   background: white;
-  background: url("../img/blog-2.jpg") center center / cover no-repeat fixed darkcyan;
   box-sizing: border-box;
 }
 .entradasTexto p {
@@ -499,6 +498,12 @@ main{
   align-self: flex-end;
   text-decoration: none;
   color: darkcyan;
+}
+.entradasPortadas1 img{
+  background: url("../img/blog-2.jpg") bottom right / contain no-repeat fixed navajowhite;
+}
+.entradasPortadas2 img{
+  background: url("../img/blog-3.jpg") bottom right / contain no-repeat fixed navajowhite;
 }
 
 /* footer */
