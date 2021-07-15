@@ -440,9 +440,6 @@ main{
 .entradasNuevas div:first-child{
   margin-bottom: 5%;
 }
-.entradasNuevas>h2{
-  text-align: left;
-}
 .entradasNuevas a{
   align-self: flex-end;
   text-decoration: none;
