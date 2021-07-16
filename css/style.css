@@ -512,7 +512,7 @@ main{
   background-origin: content-box;
 }
 .entradasPortadas3 img{
-  background: url("../img/blog.jpg") bottom right / contain no-repeat fixed navajowhite;
+  background: url("../img/blog.jpg") center center / cover no-repeat fixed navajowhite;
   background-clip: content-box;
 }
 /* center / right contain para pc */
@@ -655,6 +655,9 @@ footer img{
   }
   .portProyectos p{
     font-size: 0.9em;
+  }
+  .entradasAntes img{
+    background: center right / contain;
   }
 }
 
