@@ -490,7 +490,7 @@ main{
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  padding: 2%;
+  padding: 2%; /* linea */
   background: white;
   box-sizing: border-box;
 }
@@ -507,13 +507,16 @@ main{
   background-origin: content-box;
 }
 .entradasPortadas2 img{
-  background: url("../img/blog-3.jpg") center right / cover no-repeat fixed navajowhite;
-  background-origin: border-box;
+  background: url("../img/blog-3.jpg") center center / cover no-repeat fixed navajowhite;
+  background-clip: content-box;
+  background-origin: content-box;
 }
 .entradasPortadas3 img{
-  background: url("../img/blog.jpg") center right / contain no-repeat fixed navajowhite;
-  background-clip: padding-box;
+  background: url("../img/blog.jpg") bottom right / contain no-repeat fixed navajowhite;
+  background-clip: content-box;
 }
+/* center / right contain para pc */
+/* center center / cover para mobil */
 
 /* footer */
 footer{
