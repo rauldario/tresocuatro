@@ -454,7 +454,7 @@ main{
   /*
   background: url("../img/blog.jpg") center center / cover no-repeat fixed darkcyan;
   */
-  background-clip: border-box;
+  background-clip: content-box;
 }
 .tituloBlog{
   width: 100%;
@@ -504,10 +504,16 @@ main{
 }
 .entradasPortadas1 img{
   background: url("../img/blog-2.jpg") center right / cover no-repeat fixed navajowhite;
+  background-origin: content-box;
+  background-attachment: scroll;
 }
 .entradasPortadas2 img{
-  background: url("../img/blog-3.jpg") center right / cover no-repeat fixed navajowhite;
-  background-clip: border-box;
+  background: url("../img/blog-3.jpg") center right / 100% no-repeat fixed navajowhite;
+  background-origin: border-box;
+}
+.entradasPortadas3 img{
+  background: url("../img/blog.jpg") center right / contain no-repeat fixed navajowhite;
+  background-clip: padding-box;
 }
 
 /* footer */
