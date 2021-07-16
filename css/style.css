@@ -451,7 +451,10 @@ main{
 .portadaBlog img{
   width: 100%;
   height: 100%;
+  /*
   background: url("../img/blog.jpg") center center / cover no-repeat fixed darkcyan;
+  */
+  background-clip: border-box;
 }
 .tituloBlog{
   width: 100%;
@@ -503,7 +506,8 @@ main{
   background: url("../img/blog-2.jpg") center right / contain no-repeat fixed navajowhite;
 }
 .entradasPortadas2 img{
-  background: url("../img/blog-3.jpg") center right / contain no-repeat fixed navajowhite;
+  background: url("../img/blog-3.jpg") center right / cover no-repeat fixed navajowhite;
+  background-clip: border-box;
 }
 
 /* footer */
