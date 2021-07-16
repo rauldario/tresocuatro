@@ -503,7 +503,7 @@ main{
   color: darkcyan;
 }
 .entradasPortadas1 img{
-  background: url("../img/blog-2.jpg") center right / contain no-repeat fixed navajowhite;
+  background: url("../img/blog-2.jpg") center right / cover no-repeat fixed navajowhite;
 }
 .entradasPortadas2 img{
   background: url("../img/blog-3.jpg") center right / cover no-repeat fixed navajowhite;
