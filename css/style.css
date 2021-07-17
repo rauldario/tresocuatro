@@ -223,10 +223,12 @@ main{
 .saludo h1{
   margin-bottom 2%;
 }
+/*
 .saludoPortada{
   background: rgb(178,34,34);
   background: linear-gradient(90deg, rgba(178,34,34,0.99) 0%, rgba(178,34,34,0.7) 50%);
-}
+}*/
+
 .saludoPortada img{
   display: flex;
   width: 100%;
@@ -640,10 +642,6 @@ footer img{
   .saludo{
     padding: 10% 5%;
   }
-  .saludoPortada{
-    background: rgb(178,34,34);
-    background: linear-gradient(0deg, rgba(178,34,34,0.99) 0%, rgba(178,34,34,0.7) 50%);
-  }
   .web{
     width: 100%;
     height: auto;
@@ -696,7 +694,7 @@ footer img{
   }
 }
 
-  @media screen and (min-width: 671px){
+@media screen and (min-width: 671px){
   .webdescr{
   padding-right: 20px;
   }
