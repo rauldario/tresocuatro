@@ -330,7 +330,7 @@ main{
 }
 .aboutText{
   background: peru;
-  padding: 0 5%;
+  padding: 5%;
 }
 .aboutText h1{
   margin-bottom: 2%;
@@ -373,22 +373,24 @@ main{
  /*testimonials*/
  .opiniones{
    width: 100%;
+   padding: 5% 0;
    background: #37474F;
  }
- .comentarios{
-   color: ghostwhite;
+ .comentarios, .commentSlider{
    width: 80%;
+   color: ghostwhite;
    height: auto;
    margin: 0 auto;
-   padding: 5% 0;
  }
  .commentSlider{
+   padding-top: 5%;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-around;
  }
  .commentSlider div{
    width: 250px;
+   height: 100%;
    margin: 20px;
    background: #668888;
    display: flex;
@@ -401,19 +403,28 @@ main{
    outline: solid 1px peru;
    box-shadow: 0px 0px 10px peru;
  }
+ .commentSlider div:hover q{
+   max-height: 200px;
+ }
  .commentSlider img{
    width: 75%;
-   margin: 0 auto;
+   margin: 1em auto;
    border-radius: 100%;
    border: solid 1px #111827;
  }
- .commentSlider h3, q{
+ .commentSlider h3{
    margin: 1em 0;
    text-align: center;
- }
- .commentSlider h3{
    height: 50px;
    color: #111827;
+ }
+ .commentSlider q{
+   max-height: 0px;
+   margin: .5em;
+   font-size: .9em;
+   text-align: justify;
+   transition: all 1s ease-in-out;
+   overflow: hidden;
  }
  .commentSlider p{
    text-align: right;
