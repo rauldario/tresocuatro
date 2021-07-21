@@ -223,6 +223,7 @@ main{
 .saludo h1{
   margin-bottom 2%;
 }
+
 /*
 .saludoPortada{
   background: rgb(178,34,34);
@@ -237,6 +238,7 @@ main{
   z-index: -1;
   box-sizing: content-box;
 }
+
 /*
 .saludoPortada img{
   width: 100%;
@@ -244,7 +246,6 @@ main{
   z-index: -1;
   background: linear-gradient(rgba(178,34,34,0.8) 30%, rgba(139,0,0,0.8) 100%), url("../img/fondo-bienvenida.jpg") center center / cover no-repeat fixed firebrick;
 }
-
 
 /* Diseño Grafico */
 .grafico{
@@ -370,69 +371,70 @@ main{
 }
 */
 
- /*testimonials*/
- .opiniones{
-   width: 100%;
-   padding: 5% 0;
-   background: #37474F;
- }
- .comentarios, .commentSlider{
-   width: 80%;
-   color: ghostwhite;
-   height: auto;
-   margin: 0 auto;
- }
- .commentSlider{
-   padding-top: 5%;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
- }
- .commentSlider div{
-   width: 250px;
-   height: 100%;
-   margin: 20px;
-   background: #668888;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   outline: solid 1px ghostwhite;
- }
- .commentSlider div:hover{
-   background: #6691B2;
-   outline: solid 1px peru;
-   box-shadow: 0px 0px 10px peru;
- }
- .commentSlider div:hover q{
-   max-height: 200px;
- }
- .commentSlider img{
-   width: 75%;
-   margin: 1em auto;
-   border-radius: 100%;
-   border: solid 1px #111827;
- }
- .commentSlider h3{
-   margin: 1em 0;
-   text-align: center;
-   height: 50px;
-   color: #111827;
- }
- .commentSlider q{
-   max-height: 0px;
-   margin: .5em;
-   font-size: .9em;
-   text-align: justify;
-   transition: all 1s ease-in-out;
-   overflow: hidden;
- }
- .commentSlider p{
-   text-align: right;
-   padding-right: 5px;
-   margin-bottom: 0;
-   background-color: #111827;
-   line-height: 40px;
- }
+/*testimonials*/
+.opiniones{
+ width: 100%;
+ padding: 5% 0;
+ background: #37474F;
+}
+.comentarios, .commentSlider{
+ width: 80%;
+ height: auto;
+ margin: 0 auto;
+ color: ghostwhite;
+}
+.commentSlider{
+ padding-top: 3%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+}
+.commentSlider div{
+ width: 250px;
+ height: 100%;
+ margin: 20px;
+ background: #668888;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ outline: solid 1px ghostwhite;
+}
+.commentSlider div:hover{
+ background: #6691B2;
+ outline: solid 1px peru;
+ box-shadow: 0px 0px 10px peru;
+}
+
+.commentSlider div:hover q{
+ max-height: 40vh;
+}
+.commentSlider img{
+ width: 75%;
+ margin: 1em auto;
+ border-radius: 100%;
+ border: solid 1px #111827;
+}
+.commentSlider h3{
+ margin: 1em 0;
+ text-align: center;
+ height: 50px;
+ color: #111827;
+}
+.commentSlider q{
+ max-height: 0px;
+ margin: .5em;
+ font-size: .9em;
+ text-align: justify;
+ overflow: hidden;
+ transition: all 1s ease-in-out;
+}
+.commentSlider p{
+ text-align: right;
+ padding-right: 5px;
+ margin-bottom: 0;
+ background-color: #111827;
+ line-height: 40px;
+}
 
 /* Portafolio*/
 .portafolio{
