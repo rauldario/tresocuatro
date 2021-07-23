@@ -26,6 +26,8 @@ h1{
 }
 h2{
   font-size: 1.4em;
+  margin-bottom: 20px;
+
 }
 h3{
   font-size: 1.2em;
@@ -201,9 +203,9 @@ main{
   width: auto;
   padding: 10%;
 */
-  /*
+/*
   background: radial-gradient(circle, rgba(184,134,11,0.95) 30%, rgba(218,165,32,0.8) 100%), url(../img/fondo-welcome.jpg) center center / cover no-repeat fixed goldenrod;
-  */
+*/
 /*
   background: radial-gradient(circle, rgba(178,34,34,0.8) 30%, rgba(139,0,0,0.8) 100%), url(../img/fondo-welcome.jpg) center center / cover no-repeat fixed firebrick;
   color: ghostwhite;
@@ -294,6 +296,7 @@ main{
   min-width: 250px;
   height: auto;
 }
+
 .webdescr ul li{
   font-size: .9em;
   list-style-position: inside;
@@ -488,7 +491,7 @@ main{
   margin: 0 auto;
   display: flex;
 }
-.entradasNuevas, .portadaBlog{
+.entradaNueva, .portadaEntrada0{
   width: 50%;
   height: auto;
   background: darkcyan;
@@ -496,23 +499,28 @@ main{
   flex-direction: column;
   box-sizing: border-box;
 }
-.entradasNuevas{
+.entradaNueva{
   padding: 5%;
+  color: navajowhite;
   justify-content: center;
 }
-.entradasNuevas a:first-of-type{
+.entradaNueva a:first-of-type{
   margin-bottom: 5%;
 }
-.entradasNuevas>h2{
+.entradaNueva>h2{
   text-align: left;
   color: ghostwhite;
 }
-.entradasNuevas a{
+.entradaNueva a{
   text-align: right;
   text-decoration: none;
-  color: ghostwhite;
+  color: black;
 }
-.portadaBlog img{
+.entradaNueva a:hover{
+  color: ghostwhite;
+  text-shadow: 3px 3px 5px black;
+}
+.portadaEntrada0 img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -526,7 +534,7 @@ main{
   background: navajowhite;
   padding: 50px 0 10px;
 }
-.entradasAntes{
+.entradaAntes{
   width: 100%;
   background: navajowhite;
   padding: 10px;
@@ -535,44 +543,79 @@ main{
   flex-wrap: wrap;
   box-sizing: border-box;
 }
-.entradasAntes div{
+.entradaAntes div{
   width: 50%;
-  height: 60vh;
+  height: auto;
   display: flex;
   box-sizing: border-box;
 }
-.entradasAntes img{
+.entradaAntes img{
   width: 100%;
   height: 100%;
 /*  margin: 0 auto; */
   background: ghostwhite;
   box-sizing: border-box;
 }
-.entradasTexto{
+.entradaTexto{
   padding: 0 5%;
   background: ghostwhite;
   flex-direction: column;
   justify-content: center;
 }
-.entradasTexto h2, a{
+.entradaTexto h2, a{
   color: darkcyan;
 }
-.entradasTexto p{
-  margin-bottom: 0;
-}
-.entradasTexto a{
+.entradaTexto a{
   align-self: flex-end;
   text-decoration: none;
 }
 
+/* entradas de blog*/
+.blogEntradas{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.entradaBlog, .portadaBlog{
+  width: 100%;
+  height: 50%;
+  background: ghostwhite;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.entradaBlog{
+  padding: 5%;
+  justify-content: center;
+}
+.entradaBlog a:first-of-type{
+  margin-bottom: 5%;
+}
+.entradaBlog>h2{
+  text-align: left;
+}
+.portadaBlog img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.entradaBlog h1,h2{
+  color: peru;
+}
+.entradaBlog span{
+  padding: 20px 0;
+  font-weight: bolder;
+}
+
+
 /* Imagenes pequeñas en parallax */
-.entradasPortadas1 img{
+.portadaEntrada1 img{
   background: url("../img/blog-2.jpg") center center / cover no-repeat fixed navajowhite;
 }
-.entradasPortadas2 img{
+.portadaEntrada2 img{
   background: url("../img/blog-3.jpg") center center / cover no-repeat fixed navajowhite;
 }
-.entradasPortadas3 img{
+.portadaEntrada3 img{
   background: url("../img/blog.jpg") center center / cover no-repeat fixed navajowhite;
 }
 /* center / right contain para pc */
@@ -600,7 +643,7 @@ footer div{
   display: flex;
   flex-direction: column;
 }
-footer h3, p{
+footer p, h3{
   margin: 0;
   text-align: center;
 }
@@ -662,6 +705,7 @@ footer img{
   }
   .oculto, .nav-box-mobile{
   }
+
   /* desaparecer span.back */
   .back{
     display: none;
@@ -678,21 +722,29 @@ footer img{
   .blog{
     flex-direction: column-reverse;
   }
-  .entradasNuevas{
+  .entradaNueva{
+    padding: 10%;
+    width: 100%;
+  }
+  .portadaEntrada0{
+    width: 100%;
+  }
+  .entradaAntes{
+    flex-direction: column-reverse;
+  }
+  .entradaAntes div{
+    width: 100%;
+  }
+  .entradaTexto{
+    padding: 10% 5%;
+  }
+
+  .entradaBlog{
     padding: 10%;
     width: 100%;
   }
   .portadaBlog{
     width: 100%;
-  }
-  .entradasAntes{
-    flex-direction: column-reverse;
-  }
-  .entradasAntes div{
-    width: 100%;
-  }
-  .entradasTexto{
-    padding: 10% 5%;
   }
 }
 
@@ -712,13 +764,13 @@ footer img{
   .portProyectos p{
     font-size: 0.9em;
   }
-  .entradasPortadas1 img{
+  .portadaEntrada1 img{
     background: url("../img/blog-2.jpg") center right / contain no-repeat fixed navajowhite;
   }
-  .entradasPortadas2 img{
+  .portadaEntrada2 img{
     background: url("../img/blog-3.jpg") center right / contain no-repeat fixed navajowhite;
   }
-  .entradasPortadas3 img{
+  .portadaEntrada3 img{
     background: url("../img/blog.jpg") center right / contain no-repeat fixed navajowhite;
   }
 }
