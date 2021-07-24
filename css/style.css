@@ -639,7 +639,7 @@ hr{
 .imagenesBlog{
   min-width: 300px;
   margin-top: 2em;
-  padding: 2%;
+  padding: 0 2%;
   outline: solid 2px darkcyan;
 }
 .imagenesBlog:last-of-type{
