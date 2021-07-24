@@ -1,5 +1,6 @@
 /*font*/
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
 /*Reset*/
 *{
@@ -591,6 +592,17 @@ main{
   height: auto;
   margin: 0 auto;
 }
+.primerTitulo{
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+h1 + h2{
+  margin: 0;
+}
+hr{
+  margin: 3% 0;
+  border-top: 1px solid darkcyan;
+}
 .entradaBlog, .portadaBlog{
   width: 100%;
   background: ghostwhite;
@@ -598,11 +610,6 @@ main{
   flex-direction: column;
   box-sizing: border-box;
 }
-/*
-*{
-  outline: solid 1px red;
-}
-*/
 .portadaBlog{
   height: 40vh;
 }
@@ -611,16 +618,6 @@ main{
   margin: 0 auto;
   padding: 0 15%;
   justify-content: center;
-}
-.imagenesBlog{
-  min-width: 300px;
-  margin-top: 3em;
-  padding: 2%;
-  outline: solid 2px darkcyan;
-}
-.imagenesBlog img{
-  width: 100%;
-  height: auto;
 }
 .entradaBlog a:first-of-type{
   margin-bottom: 5%;
@@ -634,23 +631,30 @@ main{
   padding-left: 5%;
 }
 .entradaBlog > h1,h2{
+  font-family: 'EB Garamond', serif;
   margin-top: 5%;
   text-align: left;
   color: peru;
 }
-.primerTitulo{
-  margin-top: 5%;
-  margin-bottom: 0;
+.imagenesBlog{
+  min-width: 300px;
+  margin-top: 2em;
+  padding: 2%;
+  outline: solid 2px darkcyan;
 }
-h1 + h2{
-  margin: 0;
+.imagenesBlog:last-of-type{
+  margin-bottom: 2em;
 }
-hr{
-  margin: 3% 0;
-  border-top: 1px solid darkcyan;
+.imagenesBlog img{
+  width: 100%;
+  height: auto;
 }
 .entradaBlog span{
-  padding: 20px 0;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.5em;
+  text-align: right;
+  padding: 5% 0;
+  color: darkcyan;
   font-weight: bolder;
 }
 
