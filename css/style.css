@@ -72,6 +72,7 @@ header{
 }
 .topinfo h2{
   font-style: italic;
+  margin-bottom: 0;
   color: goldenrod;
 }
 .topinfo p{
@@ -210,7 +211,7 @@ main{
   background: radial-gradient(circle, rgba(178,34,34,0.8) 30%, rgba(139,0,0,0.8) 100%), url(../img/fondo-welcome.jpg) center center / cover no-repeat fixed firebrick;
   color: ghostwhite;
 */
-.bienvenida article, figure{
+.bienvenida figure,article{
   width: 50%;
   height: auto;
   display: flex;
@@ -417,7 +418,7 @@ main{
  border-radius: 100%;
  border: solid 1px #111827;
 }
-.commentSlider h3{
+.commentSlider>h3{
  margin: 1em 0;
  text-align: center;
  height: 50px;
@@ -545,7 +546,7 @@ main{
 }
 .entradaAntes div{
   width: 50%;
-  height: auto;
+  height: 60vh;
   display: flex;
   box-sizing: border-box;
 }
@@ -557,7 +558,7 @@ main{
   box-sizing: border-box;
 }
 .entradaTexto{
-  padding: 0 5%;
+  padding: 5%;
   background: ghostwhite;
   flex-direction: column;
   justify-content: center;
@@ -569,44 +570,6 @@ main{
   align-self: flex-end;
   text-decoration: none;
 }
-
-/* entradas de blog*/
-.blogEntradas{
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-.entradaBlog, .portadaBlog{
-  width: 100%;
-  height: 50%;
-  background: ghostwhite;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-.entradaBlog{
-  padding: 5%;
-  justify-content: center;
-}
-.entradaBlog a:first-of-type{
-  margin-bottom: 5%;
-}
-.entradaBlog>h2{
-  text-align: left;
-}
-.portadaBlog img{
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-}
-.entradaBlog h1,h2{
-  color: peru;
-}
-.entradaBlog span{
-  padding: 20px 0;
-  font-weight: bolder;
-}
-
 
 /* Imagenes pequeñas en parallax */
 .portadaEntrada1 img{
@@ -620,6 +583,77 @@ main{
 }
 /* center / right contain para pc */
 /* center center / cover para mobil */
+
+
+/* entradas de blog*/
+.blogEntradas{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.entradaBlog, .portadaBlog{
+  width: 100%;
+  background: ghostwhite;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+/*
+*{
+  outline: solid 1px red;
+}
+*/
+.portadaBlog{
+  height: 40vh;
+}
+.entradaBlog{
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 15%;
+  justify-content: center;
+}
+.imagenesBlog{
+  min-width: 300px;
+  margin-top: 3em;
+  padding: 2%;
+  outline: solid 2px darkcyan;
+}
+.imagenesBlog img{
+  width: 100%;
+  height: auto;
+}
+.entradaBlog a:first-of-type{
+  margin-bottom: 5%;
+}
+.portadaBlog img{
+  width: auto;
+  max-height: 100%;
+  object-fit: cover;
+}
+.entradaBlog ul{
+  padding-left: 5%;
+}
+.entradaBlog > h1,h2{
+  margin-top: 5%;
+  text-align: left;
+  color: peru;
+}
+.primerTitulo{
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+h1 + h2{
+  margin: 0;
+}
+hr{
+  margin: 3% 0;
+  border-top: 1px solid darkcyan;
+}
+.entradaBlog span{
+  padding: 20px 0;
+  font-weight: bolder;
+}
+
 
 /* footer */
 
@@ -643,7 +677,7 @@ footer div{
   display: flex;
   flex-direction: column;
 }
-footer p, h3{
+footer p,h3{
   margin: 0;
   text-align: center;
 }
@@ -681,7 +715,7 @@ footer img{
   .bienvenida{
     flex-direction: column-reverse;
   }
-  .bienvenida article, figure{
+  .bienvenida figure,article{
     width: 100%;
   }
   .saludo{
@@ -738,9 +772,8 @@ footer img{
   .entradaTexto{
     padding: 10% 5%;
   }
-
   .entradaBlog{
-    padding: 10%;
+    padding: 5%;
     width: 100%;
   }
   .portadaBlog{
