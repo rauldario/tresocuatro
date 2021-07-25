@@ -585,7 +585,9 @@ main{
 /* center / right contain para pc */
 /* center center / cover para mobil */
 
-
+*{
+  outline: solid 1px red;
+}
 /* entradas de blog*/
 .blogEntradas{
   width: 100%;
@@ -617,10 +619,6 @@ hr{
   width: 80%;
   margin: 0 auto;
   padding: 0 15%;
-  justify-content: center;
-}
-.entradaBlog a:first-of-type{
-  margin-bottom: 5%;
 }
 .portadaBlog img{
   width: auto;
@@ -637,10 +635,11 @@ hr{
   color: peru;
 }
 .imagenesBlog{
-  min-width: 300px;
+  width: auto;
+  min-height: 10px;
   margin-top: 2em;
-  padding: 0 2%;
   outline: solid 2px darkcyan;
+  align-self: center;
 }
 .imagenesBlog:last-of-type{
   margin-bottom: 2em;
@@ -660,7 +659,6 @@ hr{
 
 
 /* footer */
-
 footer{
   width: 100%;
   color: ghostwhite;
