@@ -44,6 +44,7 @@ header{
   top: 0;
   left: 0;
 }
+
 .topinfo{
   width: 100%;
   height: 80px;
@@ -71,7 +72,9 @@ header{
 .topinfo img:hover{
   transform: scale(1.15, 1.15);
 }
-.topinfo h2{
+.topinfo span{
+  font-size: 1.4em;
+  font-weight: bold;
   font-style: italic;
   margin-bottom: 0;
   color: goldenrod;
@@ -225,7 +228,7 @@ main{
   padding: 5% 5% 7%;
 }
 .saludo h1{
-  margin-bottom 2%;
+  margin-bottom: 2%;
 }
 
 /*
@@ -510,6 +513,7 @@ main{
   margin-bottom: 5%;
 }
 .entradaNueva>h2{
+  font-family: 'Open Sans', sans-serif;
   text-align: left;
   color: ghostwhite;
 }
@@ -565,6 +569,7 @@ main{
   justify-content: center;
 }
 .entradaTexto h2, a{
+  font-family: 'Open Sans', sans-serif;
   color: darkcyan;
 }
 .entradaTexto a{
@@ -585,19 +590,43 @@ main{
 /* center / right contain para pc */
 /* center center / cover para mobil */
 
-*{
-  outline: solid 1px red;
-}
+
 /* entradas de blog*/
 .blogEntradas{
   width: 100%;
   height: auto;
   margin: 0 auto;
 }
-.primerTitulo{
-  margin-top: 5%;
+.entradaBlog, .portadaBlog{
+  width: 100%;
+  height: auto;
+  background: ghostwhite;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+/* Tiene cambio en Media */
+.portadaBlog{
+  width: auto;
+  max-height: 25em;
+}
+.portadaBlog img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.entradaBlog h1{
   margin-bottom: 0;
 }
+.entradaBlog h1, h2{
+  font-family: 'EB Garamond', serif;
+  margin-top: 5%;
+  text-align: left;
+  color: peru;
+}
+
 h1 + h2{
   margin: 0;
 }
@@ -605,34 +634,13 @@ hr{
   margin: 3% 0;
   border-top: 1px solid darkcyan;
 }
-.entradaBlog, .portadaBlog{
-  width: 100%;
-  background: ghostwhite;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-.portadaBlog{
-  height: 40vh;
-}
 .entradaBlog{
   width: 80%;
   margin: 0 auto;
-  padding: 0 15%;
-}
-.portadaBlog img{
-  width: auto;
-  max-height: 100%;
-  object-fit: cover;
+  padding: 0 10%;
 }
 .entradaBlog ul{
   padding-left: 5%;
-}
-.entradaBlog > h1,h2{
-  font-family: 'EB Garamond', serif;
-  margin-top: 5%;
-  text-align: left;
-  color: peru;
 }
 .imagenesBlog{
   width: auto;
@@ -645,18 +653,60 @@ hr{
   margin-bottom: 2em;
 }
 .imagenesBlog img{
+  display: flex;
   width: 100%;
   height: auto;
 }
 .entradaBlog span{
   font-family: 'EB Garamond', serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: right;
-  padding: 5% 0;
+  padding: 3% 0 0;
   color: darkcyan;
   font-weight: bolder;
 }
+.masEntradas{
+  height: auto;
+  margin: 0 auto;
+}
+.masEntradas h1{
+  width: 80%;
+  font-size: 1.5em;
+  margin: 0 auto;
+  color: darkcyan;
+}
+.masEntradas ul{
+  width: 80%;
+  height: 60px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.masEntradas ul li{
+  width: auto;
+  display: inline-flex;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+.masEntradas ul li a{
+  text-decoration: none;
+}
+ul.listaEntradas li+li:before {
+  padding: 0 20px;
+  color: darkcyan;
+  content: "/\00a0";
+}
 
+
+
+/*
+*{
+  outline: solid 1px red;
+}
 
 /* footer */
 footer{
@@ -807,6 +857,12 @@ footer img{
   }
   .portadaEntrada3 img{
     background: url("../img/blog.jpg") center right / contain no-repeat fixed navajowhite;
+  }
+  .portadaBlog{
+    height: 20em;
+  }
+  .portadaBlog img{
+    height: 100%;
   }
 }
 
