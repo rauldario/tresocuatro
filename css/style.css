@@ -412,9 +412,12 @@ main{
  outline: solid 1px peru;
  box-shadow: 0px 0px 10px peru;
 }
-
 .commentSlider div:hover q{
  max-height: 40vh;
+}
+.commentSlider div:hover i{
+ color: navajowhite;
+ transform: rotateX(180deg);
 }
 .commentSlider img{
  width: 75%;
@@ -429,19 +432,27 @@ main{
  color: #111827;
 }
 .commentSlider q{
- max-height: 0px;
- margin: .5em;
- font-size: .9em;
- text-align: justify;
- overflow: hidden;
- transition: all 1s ease-in-out;
+  max-height: 0px;
+  margin: .5em;
+  font-size: .9em;
+  text-align: justify;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
 }
 .commentSlider p{
- text-align: right;
- padding-right: 5px;
- margin-bottom: 0;
- background-color: #111827;
- line-height: 40px;
+  display: inline-flex;
+  justify-content: space-between;
+  text-align: right;
+  padding-right: 5px;
+  margin-bottom: 0;
+  background-color: #111827;
+  line-height: 40px;
+}
+.commentSlider i{
+  text-align: left;
+  padding-left: 15px;
+  margin-bottom: 0;
+  line-height: 40px;
 }
 
 /* Portafolio*/
@@ -646,7 +657,7 @@ hr{
   width: auto;
   min-height: 10px;
   margin-top: 2em;
-  outline: solid 2px darkcyan;
+  box-shadow: 1px 1px 5px gray;
   align-self: center;
 }
 .imagenesBlog:last-of-type{
