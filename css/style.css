@@ -215,6 +215,7 @@ main{
   background: radial-gradient(circle, rgba(178,34,34,0.8) 30%, rgba(139,0,0,0.8) 100%), url(../img/fondo-welcome.jpg) center center / cover no-repeat fixed firebrick;
   color: ghostwhite;
 */
+
 .bienvenida figure,article{
   width: 50%;
   height: auto;
@@ -408,16 +409,8 @@ main{
  outline: solid 1px ghostwhite;
 }
 .commentSlider div:hover{
- background: #6691B2;
- outline: solid 1px peru;
- box-shadow: 0px 0px 10px peru;
-}
-.commentSlider div:hover q{
- max-height: 40vh;
-}
-.commentSlider div:hover i{
- color: navajowhite;
- transform: rotateX(180deg);
+   background: cadetblue;
+   box-shadow: 0px 0px 10px #6691B2;
 }
 .commentSlider img{
  width: 75%;
@@ -431,6 +424,7 @@ main{
  height: 50px;
  color: #111827;
 }
+/* Hover alargar, para que funcione ambos deben usar max-height */
 .commentSlider q{
   max-height: 0px;
   margin: .5em;
@@ -439,6 +433,11 @@ main{
   overflow: hidden;
   transition: all 1s ease-in-out;
 }
+.commentSlider div:hover q{
+  max-height: 300px;
+}
+/* Hover alargar */
+
 .commentSlider p{
   display: inline-flex;
   justify-content: space-between;
@@ -630,10 +629,10 @@ main{
 
 .entradaBlog h1{
   margin-bottom: 0;
+  margin-top: 5%;
 }
 .entradaBlog h1, h2{
   font-family: 'EB Garamond', serif;
-  margin-top: 5%;
   text-align: left;
   color: peru;
 }
@@ -656,7 +655,7 @@ hr{
 .imagenesBlog{
   width: auto;
   min-height: 10px;
-  margin-top: 2em;
+  margin: 2em 0 ;
   box-shadow: 1px 1px 5px gray;
   align-self: center;
 }
