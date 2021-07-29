@@ -652,6 +652,9 @@ hr{
 .entradaBlog ul{
   padding-left: 5%;
 }
+.entradaBlog ul li{
+  font-size: 0.9em
+}
 .imagenesBlog{
   width: auto;
   min-height: 10px;
