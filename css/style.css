@@ -589,13 +589,16 @@ main{
 
 /* Imagenes pequeñas en parallax */
 .portadaEntrada1 img{
-  background: url("../img/blog-2.jpg") center center / cover no-repeat fixed navajowhite;
+  object-fit: cover;
+/*  background: url("../img/blog-2.jpg") center center / cover no-repeat fixed navajowhite;  */
 }
 .portadaEntrada2 img{
-  background: url("../img/blog-3.jpg") center center / cover no-repeat fixed navajowhite;
+  object-fit: cover;
+/*  background: url("../img/blog-3.jpg") center center / cover no-repeat fixed navajowhite;  */
 }
 .portadaEntrada3 img{
-  background: url("../img/blog.jpg") center center / cover no-repeat fixed navajowhite;
+  object-fit: cover;
+/*  background: url("../img/blog.jpg") center center / cover no-repeat fixed navajowhite;  */
 }
 /* center / right contain para pc */
 /* center center / cover para mobil */
