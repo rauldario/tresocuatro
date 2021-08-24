@@ -619,7 +619,7 @@ main{
   box-sizing: border-box;
 }
 /* Tiene cambio en Media */
-.portadaBlog{
+.portadaBlog, .portadaBlogLettering{
   width: auto;
   max-height: 25em;
 }
@@ -627,6 +627,13 @@ main{
   width: 100%;
   height: auto;
   object-fit: cover;
+  box-sizing: border-box;
+}
+.portadaBlogLettering img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: 0 10%;  
   box-sizing: border-box;
 }
 
@@ -874,10 +881,10 @@ footer img{
   .portadaEntrada3 img{
     background: url("../img/blog.jpg") center right / contain no-repeat fixed navajowhite;
   }
-  .portadaBlog{
+  .portadaBlog, .portadaBlogLettering{
     height: 20em;
   }
-  .portadaBlog img{
+  .portadaBlog img, .portadaBlogLettering img{
     height: 100%;
   }
 }
