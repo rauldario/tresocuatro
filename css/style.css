@@ -552,28 +552,29 @@ main{
 }
 .entradaAntes{
   width: 100%;
-  background: navajowhite;
-  padding: 10px;
-  height: auto;
+  height: 100%;
+  outline: 3px solid navajowhite;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
 .entradaAntes div{
-  width: 50%;
-  height: 60vh;
+  height: 150px;
   display: flex;
   box-sizing: border-box;
 }
 .entradaAntes img{
   width: 100%;
-  height: 100%;
+  max-height: auto;
+  object-fit: cover;
 /*  margin: 0 auto; */
   background: ghostwhite;
   box-sizing: border-box;
 }
 .entradaTexto{
-  padding: 5%;
+  width: 65%;
+  height: auto;
+  padding: 3%;
   background: ghostwhite;
   flex-direction: column;
   justify-content: center;
@@ -586,19 +587,11 @@ main{
   align-self: flex-end;
   text-decoration: none;
 }
-
 /* Imagenes pequeñas en parallax */
-.portadaEntrada1 img{
-  object-fit: cover;
+.portadaEntrada1,.portadaEntrada2,.portadaEntrada3{
+  width: 35%;
+  height: auto;
 /*  background: url("../img/blog-2.jpg") center center / cover no-repeat fixed navajowhite;  */
-}
-.portadaEntrada2 img{
-  object-fit: cover;
-/*  background: url("../img/blog-3.jpg") center center / cover no-repeat fixed navajowhite;  */
-}
-.portadaEntrada3 img{
-  object-fit: cover;
-/*  background: url("../img/blog.jpg") center center / cover no-repeat fixed navajowhite;  */
 }
 /* center / right contain para pc */
 /* center center / cover para mobil */
@@ -633,7 +626,7 @@ main{
   width: 100%;
   height: auto;
   object-fit: cover;
-  object-position: 0 10%;  
+  object-position: 0 10%;
   box-sizing: border-box;
 }
 
@@ -644,7 +637,7 @@ main{
 .entradaBlog h1, h2{
   font-family: 'EB Garamond', serif;
   text-align: left;
-  color: peru;
+  color: goldenrod;
 }
 
 h1 + h2{
@@ -842,10 +835,11 @@ footer img{
     flex-direction: column-reverse;
   }
   .entradaAntes div{
+    height: auto;
     width: 100%;
   }
   .entradaTexto{
-    padding: 10% 5%;
+    padding: 5%;
   }
   .entradaBlog{
     padding: 5%;
