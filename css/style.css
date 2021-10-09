@@ -694,25 +694,21 @@ hr{
   font-weight: bolder;
 }
 .masEntradas{
+  width: 100%;
   height: auto;
-  margin: 0 auto;
-}
-.masEntradas h3{
-  width: 80%;
-  font-size: 1.5em;
-  margin: 0 auto;
   color: darkcyan;
 }
-.masEntradas hr{
-  margin: 0 auto 30px;
+.masEntradas h3{
+  width: 90%;
+  margin: 0 auto 5px;
+  font-size: 1.5em;
 }
 .masEntradas ul{
   width: 80%;
   height: auto;
-  margin: 0 auto 30px;
+  margin: 0 auto 3%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
   list-style: none;
 }
@@ -728,7 +724,6 @@ hr{
 }
 ul.listaEntradas li+li:before {
   padding: 0 1vw;
-  color: darkcyan;
   content: "/\00a0";
 }
 
