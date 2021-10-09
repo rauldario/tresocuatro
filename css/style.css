@@ -677,8 +677,7 @@ hr{
   width: 100%;
   min-height: 10px;
   margin: 2em 0;
-  margin: 0 auto;
-
+  align-self: center;
 }
 .videoLettering iframe{
   width: 100%;
@@ -703,6 +702,9 @@ hr{
   font-size: 1.5em;
   margin: 0 auto;
   color: darkcyan;
+}
+.masEntradas hr{
+  margin: 0 auto 30px;
 }
 .masEntradas ul{
   width: 80%;
