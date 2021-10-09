@@ -698,7 +698,7 @@ hr{
   height: auto;
   margin: 0 auto;
 }
-.masEntradas h1{
+.masEntradas h3{
   width: 80%;
   font-size: 1.5em;
   margin: 0 auto;
@@ -706,8 +706,8 @@ hr{
 }
 .masEntradas ul{
   width: 80%;
-  height: 60px;
-  margin: 0 auto 40px;
+  height: auto;
+  margin: 0 auto 30px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -725,12 +725,10 @@ hr{
   text-decoration: none;
 }
 ul.listaEntradas li+li:before {
-  padding: 0 20px;
+  padding: 0 1vw;
   color: darkcyan;
   content: "/\00a0";
 }
-
-
 
 /*
 *{
@@ -860,6 +858,12 @@ footer img{
   }
   .portadaBlog{
     width: 100%;
+  }
+  .masEntradas ul li{
+    padding: 5px 5px 0;
+  }
+  ul.listaEntradas li+li:before{
+    display: none;
   }
 }
 
