@@ -661,7 +661,7 @@ hr{
 .imagenesBlog{
   width: auto;
   min-height: 10px;
-  margin: 2em 0 ;
+  margin: 2em 0;
   box-shadow: 1px 1px 5px gray;
   align-self: center;
 }
@@ -672,6 +672,19 @@ hr{
   display: flex;
   width: 100%;
   height: auto;
+}
+.videoLettering{
+  width: 100%;
+  min-height: 10px;
+  margin: 2em 0;
+  margin: 0 auto;
+
+}
+.videoLettering iframe{
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
 }
 .entradaBlog span{
   font-family: 'EB Garamond', serif;
@@ -880,6 +893,9 @@ footer img{
   }
   .portadaBlog img, .portadaBlogLettering img{
     height: 100%;
+  }
+  .videoLettering{
+    max-width: 550px;
   }
 }
 
